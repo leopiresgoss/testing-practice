@@ -1,6 +1,6 @@
 class Calculator {
   static add(...num) {
-    if(num.length < 2) {
+    if (num.length < 2) {
       throw new Error('You should add at least two numbers');
     }
 
@@ -8,27 +8,27 @@ class Calculator {
   }
 
   static subtract(...num) {
-    if(num.length < 2) {
+    if (num.length < 2) {
       throw new Error('You should add at least two numbers');
     }
 
-    return num.reduce((prev, cur) => cur - prev, 0) * -1
+    return num.reduce((prev, cur) => cur - prev, 0) * -1;
   }
 
   static divide(...num) {
-    if(num.length !== 2) {
+    if (num.length !== 2) {
       throw new Error('You should divide only two numbers');
     }
 
-    return num[0]/num[1];
+    return num[0] / num[1];
   }
 
   static multiply(...num) {
-    if(num.length !== 2) {
+    if (num.length !== 2) {
       throw new Error('You should multiply only two numbers');
     }
 
-    return num[0] * num[1];    
+    return num[0] * num[1];
   }
 }
 
